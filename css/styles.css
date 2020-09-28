@@ -1,11 +1,23 @@
+body, html {
+  max-width:100%;
+  height: 100%;
+}
 body {
   background-image: url('../images/bg-mobile.png');
   color: hsl(243, 100%, 93%);
   font-family: 'Raleway', sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 0;
+  padding: 0;
 }
-
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
 .storage {
   width: 68%;
   height: 110px;
@@ -14,7 +26,7 @@ body {
   padding: 40px;
   margin: 0 auto;
   margin-bottom: 20px;
-  margin-top: 120px;
+  margin-top: 0px;
   background-color: hsl(228, 56%, 26%);
 }
 
@@ -223,7 +235,7 @@ body {
     font-weight: 500;
     margin: 0;
   }
-  .iconos {
+  .iconos {  
     padding-top: 20px;
     display: flex;
   }
