@@ -133,7 +133,7 @@ body {
     height: 100%;
   }
   body {
-    margin: 0;
+    margin: 10px;
     padding: 0;
   }
   .container {
@@ -143,57 +143,115 @@ body {
     flex-direction: column;
     height: 100%;
   }
-  .storage {
+  .storage { 
     margin-top: 0px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .storage {
-    width: 60%;
-    height: 160px;
+  body {
+    background-image: url('../images/bg-desktop.png');
+    color: hsl(243, 100%, 93%);
+    background-color: hsl(229, 57%, 11%);
+    background-size:  auto;
+    background-position: bottom;
+    margin: 0;
   }
-  .iconos {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-top: 30px;
   }
-  .image-container {
-    width: 55px;
-    height: 55px;
-    padding: 0;
-  }
-  .image-container img {
-    width: 55%;
-  }
-  .logo {
-    width: 37%;
-    height: auto;
+  .storage {
+    width: 28%;
+    height: 130px;
+    margin: 0 20px 0 0;
   }
   .progress-storage {
-    width: 60%;
-    height: 100px;
+    width: 40%;
+    height: 75px;
+    text-align: right;
+    margin: 45px 0 0 0;
+    align-items: flex-start;
   }
   .progress-storage p {
-    font-size: 22px;
+    font-size: 18px;
+    font-weight: 500;
+    margin:25px 0 0 0;
+  }
+  .iconos {
+    padding-top: 20px;
+    margin-left: -20px;
+  }
+  .image-container {
+    display: flex;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(229, 57%, 11%);
+    padding: 10px;
+  }
+  .image-container img {
+    width: 65%;
+    height: auto;
+  }
+  .logo {
+    width: 70%;
+    margin-left: -10px;
+    height: auto;
   }
   .progress-storage-bar-container {
-    height: 20px;
-    border-radius: 10px;
+    height: 12px;
   }
   .progress-storage-bar {
-    width: 80%;
-    height: 18px;
-  }
-  .progress-storage-bar-meter {
-    width: 15px;
-    height: 15px;
+    height: 11px;
+    
   }
   .labels {
-    font-size: 22px;
+    font-size: 18px;
+  }
+  #number-counter {
+    font-size: 27px;
+    color: hsl(229, 57%, 11%);
+    font-weight: 800;
+  }
+  #number-size {
+    font-size: 10px;
+    color: hsl(240, 1%, 45%);
+  }
+  .progress-storage-bar-meter {
+    width: 9px;
+    height: 9px; 
+    border-radius: 50%;
+    margin-right: 2px;
+    background-color: hsl(243, 100%, 93%);
   }
   .counter {
-    width: 170px;
-    height: 90px;
-    margin-top: 100px;
+    text-transform: uppercase;
+    color: hsl(229, 7%, 55%);
+    background-color: white;
+    width: 135px;
+    height: 55px;
+    padding: 2px;
+    border-radius: 8px;
+    position: absolute;
+    margin: -75px 0 0 170px;
+  }
+  .triangle {
+    position: absolute;
+    margin: -36px 0 0 258px;
+    width: 20px;
+    height: 5px;
+    background-color: transparent;
+    border-left: 15px solid transparent;
+    border-right: 15px solid white;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
   }
 }
 
@@ -219,7 +277,7 @@ body {
     padding-top: 0px;
   }
   .storage {
-    width: 16%;
+    width: 16%; 
     height: 90px;
     margin: 0 20px 0 0;
   }
@@ -346,7 +404,7 @@ body {
     margin: 0;
   }
   .iconos {
-    padding-top: 20px;
+    padding-top: 18px;
     display: flex;
   }
   .image-container {
